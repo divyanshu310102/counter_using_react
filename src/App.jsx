@@ -11,11 +11,14 @@ function App() {
      counter += 1;
      setCounter(counter)
   }
-  const decre = () =>{
-    counter -= 1;
-    setCounter(counter)
- }
+  
 
+  const decre = () => {
+    if(counter > 0){
+      counter -= 1;
+    setCounter(counter)
+    }
+  }
 
   return (
     <>
